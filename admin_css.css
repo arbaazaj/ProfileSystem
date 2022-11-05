@@ -1,0 +1,320 @@
+body {
+    background-color: whitesmoke;
+    background-image: url(images/water-glass.png);
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+.admin-container {
+    margin: 20px;
+    box-shadow: -4px 4px 4px rgba(0,0,0,0.50) , 4px 4px 4px rgba(0,0,0,0.50);
+    border-radius: 10px;
+    background-color: #009688;
+    width: 97%;
+    height: 635px;
+    font-family: cursive;
+}
+
+.errors {
+    background-color: windowframe;
+}
+
+.admin-login-form {
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+    border-radius: 10px;
+    margin-left: 38%;
+    margin-top: 12%;
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    color: #009688;
+    background-color: windowframe;
+}
+
+.admin-login-form .form-admin-login span h1 {
+    text-shadow: 1.5px 2.5px 3.5px #444;
+}
+
+.admin-login-form span a:hover {
+    text-shadow: 1.5px 2.5px 3.5px #444;
+}
+
+.form-admin-login {
+    margin-top: 5%;
+}
+
+.admin-input {
+    border: 2.5px solid;
+    border-color: #009688;
+    padding: 12px;
+    font-size: 16px;
+    color: window;
+    margin-bottom: 5px;
+    background-color: rgba(0,0,0,0.60);
+    font-family: cursive;
+}
+
+.admin-login-button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: cursive;
+}
+
+.admin-login-button:hover {
+    cursor: pointer;
+    box-shadow: -1px 1.5px 3px rgba(0,0,0,0.25) , 1px -1.5px 3.5px rgba(0,0,0,0.25);
+    text-shadow: 0.5px 0.5px 0.5px;
+    background-color: threedhighlight;
+}
+
+.admin-logout-button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: cursive;
+}
+
+.admin-logout-button:hover {
+    cursor: pointer;
+    box-shadow: -1px 1.5px 3px rgba(0,0,0,0.25) , 1px -1.5px 3.5px rgba(0,0,0,0.25);
+    text-shadow: 0.5px 0.5px 0.5px;
+    background-color: threedhighlight;
+}
+
+.admin-menu {
+    background-color: #006666;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 75px;
+    display: inline-block;
+}
+
+.admin-menu nav ul li {
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 6px;
+    margin-top: -1.5px;
+    transition: 0.4s;
+    border-style: ridge;
+    border-color: turquoise;
+    text-decoration: none;
+    background-color: #0FF;
+    float: left;
+    padding: 10px;
+    display: block;
+}
+
+.admin-menu nav span ul li {
+    float: right;
+}
+
+.admin-menu nav ul li:hover {
+    background-color: teal;
+    color: whitesmoke;
+}
+
+.admin-menu li a {
+    display: block;
+}
+
+.admin-menu nav ul li a {
+    color: #444;
+    text-decoration: none;
+}
+
+.admin-menu nav ul li a:hover {
+    color: whitesmoke;
+}
+
+.admin-menu nav ul li a:visited {
+    background-color: green;
+}
+
+.admin-menu .admin-active {
+    position: relative;
+    color: #006666;
+    border-style: dashed;
+    border-color: #009688;
+}
+
+.admin-menu .admin-active:after {
+    position: absolute;
+    bottom: -3px;
+    border-radius: 0 0 2px 2px;
+    left: 40%;
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    content: " ";
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid;
+    border-left: 10px solid transparent;
+}
+
+.admin-menu .admin-active:hover {
+    border-color: #009688;
+    border-style: dashed;
+}
+
+.user-details {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    background-color: #006666;
+    color: #0FF;
+    font-family: Gadugi;
+}
+
+.user-details table {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.user-details tbody {
+    height: auto;
+}
+
+.user-details th {
+    border-right: 0.5px solid;
+    border-bottom: 7px solid;
+}
+
+.user-details td {
+    word-break: break-word;
+    border-right: 0.5px solid;
+    border-bottom: 3px solid;
+}
+
+.admin-login-form span a {
+    text-decoration: none; 
+    font-size: large;
+    color: darkslategray;
+}
+
+.admin-login-form span a:hover {
+    text-decoration: underline;
+    color: #009688;
+}
+
+.cards {
+    background-color: transparent;
+    height: 400px;
+    width: 800px;
+}
+
+.card-1 {
+    margin: 40px 0px 30px 40px;
+    float: left;
+    background-color: #006666;
+    height: 250px;
+    width: 350px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 6px 16px 0 rgba(0,0,0,0.19);
+}
+
+.card-1 img {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card-2 {
+    margin: 40px 30px 0px 0px;
+    float: right;
+    background-color: #006666;
+    height: 250px;
+    width: 350px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 6px 16px 0 rgba(0,0,0,0.19);
+}
+
+.card-2 img {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card-button {
+    margin-top: 0%;
+    font-size: 24px;
+    font-family: cursive;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-shadow: 1px 2px 3px #444;
+    width: 100%;
+    height: 30%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.w3-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.90); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.w3-modal-content {
+    background-color: #fefefe;
+    margin: 3% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    margin-left: 630px;
+    position: fixed;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.w3-modal-header {
+    border-bottom: 4px solid black;
+}
+
+.w3-section ul {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: whitesmoke;
+    list-style-type: none;
+    background-color: dimgrey;
+}
+
+.w3-section ul li {
+    display: inline-block;
+}
+
+.w3-section ul:hover {
+
+    cursor: pointer;
+    color: darkolivegreen;
+    background-color: lightgray;
+    border: 1.5px solid black;
+}
