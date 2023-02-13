@@ -7,7 +7,6 @@ body {
 }
 
 #container {
-
     background-color: #CCC;
     border-radius: 0 0 15px 15px;
     background-image: url(images/img1.jpg);
@@ -21,6 +20,12 @@ body {
     padding-bottom: 10px;
     text-align: center;
     width: 1000px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #profile-holder {

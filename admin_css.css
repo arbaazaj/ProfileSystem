@@ -254,6 +254,12 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.center {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
 .w3-modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */

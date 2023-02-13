@@ -2,20 +2,26 @@
 
 require './conn.php';
 
-if(isset($_POST['Login'])) {
-    
+session_start();
+
+if (isset($_POST['Login'])) {
+
     $Uname = $_POST['username'];
     $Pass = $_POST['password'];
-    
-    $result = $conn->query("select * from users where username='$Uname' AND password='$Pass'");
-    
-    $row = $result->fetch_array(MYSQLI_BOTH);
-    
-    session_start();
-    
-    $_SESSION['username'] = $row['username'];
-    
-    header("location: index.php");
-}
 
-?>
+    if (isset($conn)) {
+        $result = $conn->prepare("Select * FROM users WHERE username='$Uname' AND password='$Pass'");
+        $result->bind_param('s', $Uname, $Pass);
+        $result->execute();
+        $result->store_result();
+
+        if ($result->num_rows > 0) {
+            $result->bind_result($Uname, $Pass);
+            $result->fetch();
+
+            $_SESSION['username'] = $Uname;
+            header("location: index.php");
+        }
+        $result->close();
+    }
+}
